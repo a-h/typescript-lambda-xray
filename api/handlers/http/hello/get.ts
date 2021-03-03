@@ -1,8 +1,6 @@
 import { APIGatewayProxyEvent, APIGatewayProxyResult, Context } from "aws-lambda";
 import { metricScope, Unit } from "aws-embedded-metrics";
 import { xrayScope } from "../../../xray";
-
-// Make sure you capture HTTPS before you import axios.
 import axios from "axios";
 import log from "../../../logger";
 import EventBridge from "aws-sdk/clients/eventbridge";
